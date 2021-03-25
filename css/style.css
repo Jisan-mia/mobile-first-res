@@ -171,6 +171,7 @@ nav .nav-lists.show {
 
 .apartments {
 	background-color: #f6f6f7;
+	padding-bottom: 3rem;
 }
 .apartments-container {
 	display: grid;
@@ -205,6 +206,55 @@ nav .nav-lists.show {
 
 .hero-img {
 	display: none;
+}
+
+/* footer designs */
+footer {
+	background: #25df8f;
+	padding: 2.5rem 0;
+}
+
+.footer-header {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: royalblue;
+	margin-bottom: 1rem;
+}
+
+.footer-container-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3rem;
+}
+
+.footer-container-grid ul {
+	list-style: none;
+}
+.footer-container-grid ul p {
+	margin-bottom: 0.6rem;
+	font-weight: 500;
+}
+.footer-container-grid ul a {
+	text-decoration: none;
+	color: rgba(6, 25, 82, 0.685);
+	font-size: 1rem;
+	display: block;
+
+	padding: 3px 0;
+}
+.footer-container-grid ul a:hover {
+	color: rgba(29, 75, 216, 0.685);
+}
+.footer-container-grid ul.subscribe {
+	width: 100%;
+}
+.footer-container-grid ul.subscribe input {
+	border: none;
+	outline: none;
+	padding: 0.5rem 0rem;
+	width: 100%;
+	margin-bottom: 0.3rem;
 }
 
 /* media queries */
@@ -277,6 +327,11 @@ nav .nav-lists.show {
 	.apartment-title a {
 		font-size: 1.2rem;
 	}
+
+	.footer-container-grid {
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 3rem;
+	}
 }
 
 @media (min-width: 1192px) {
@@ -285,5 +340,24 @@ nav .nav-lists.show {
 	}
 	.apartments-container {
 		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 380px) {
+	.apartments-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	nav .search input {
+		/* margin-left: 0.2rem; */
+		min-width: 80px;
+		font-size: 0.8rem;
+	}
+	.hero-text h1 {
+		font-size: 1.8rem;
+	}
+	.hero-btns .btn {
+		padding: 0.4rem 0.8rem;
+		font-size: 1rem;
 	}
 }
