@@ -154,7 +154,7 @@ nav .nav-lists.show {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 2rem;
+
 	margin-bottom: 1rem;
 }
 .apartment-heading h2 {
@@ -171,7 +171,8 @@ nav .nav-lists.show {
 
 .apartments {
 	background-color: #f6f6f7;
-	padding-bottom: 3rem;
+	padding-bottom: 3.5rem;
+	padding-top: 3.5rem;
 }
 .apartments-container {
 	display: grid;
